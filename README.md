@@ -1,7 +1,3 @@
-# blockbyblock.github.io
-#Website for the ICRA2025 workshop Block by Block: Collaborative Strategies for Multi-agent Robotic Construction 
-#Test landing page
-
 <h1 align="center">Hello World!</h1>
 
 <p>My name is Kevin, and here are a few things I'm working on:</p>
