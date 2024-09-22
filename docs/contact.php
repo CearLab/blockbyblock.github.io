@@ -1,8 +1,8 @@
 <?php
 // Change the 3 variables below
 $yourName = 'Federico Oliva';
-$yourEmail = 'lvofrc95@gmail.com';
-$subject = 'New subscription - word studio';
+$yourEmail = 'federico.oliva.it@gmail.com';
+$subject = 'New subscription - BlockByBlock Worskhop';
 
 $ch = $_POST['choice'];
 $email = $_POST['email'];
@@ -10,9 +10,9 @@ $email = $_POST['email'];
 if($ch=="contact")
 {
 
-$message = "From: ".$_POST['name']."\n Email: $email \r\n";
-$message = $message.$_POST['message'];
-$subject = "New subscription - word studio";
+$message = "From: ".$_POST[$yourName]."\n Email: $email \r\n";
+$message = $message.$_POST['Hello there! Thanks for subscribing to the Workshop mailing list! Stay tuned for more information!'];
+$subject = "New subscription - BlockByBlock Workshop";
 
 }
 else
