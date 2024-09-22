@@ -1,0 +1,58 @@
+/*!
+ * Bootstrap v3.3.1 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ *
+ *
+ *
+ * Theme Name: SRPACDY
+ */
+
+
+/* TAB DEFINITIONS */
+		 tab0 { padding-left: 1em; }
+ 		 tab1 { padding-left: 4em; }
+     tab2 { padding-left: 8em; }
+     tab3 { padding-left: 12em; }
+     tab4 { padding-left: 16em; }
+     tab5 { padding-left: 20em; }
+     tab6 { padding-left: 24em; }
+     tab7 { padding-left: 28em; }
+     tab8 { padding-left: 32em; }
+     tab9 { padding-left: 36em; }
+     tab10 { padding-left: 40em; }
+     tab11 { padding-left: 44em; }
+     tab12 { padding-left: 48em; }
+     tab13 { padding-left: 52em; }
+     tab14 { padding-left: 56em; }
+     tab15 { padding-left: 60em; }
+     tab16 { padding-left: 64em; }
+
+/* SIDENAV STYLE */
+#mySidenav > a {
+	color: white;
+}
+
+#sidenav_closebtn, #sidenav_info_icon, #sidenav_target_icon, #sidenav_languages_icon, #sidenav_menu_icon  {
+	color: green;
+}
+
+/* COMPANY NAME STYLE */
+#word {
+	color:green;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#studio {
+	color:red;
+	font-style: italic;
+	font-weight: bold;
+}
+
+/* DATE STYLE ON MAIN PAGE */
+.time {
+	color: white;
+/*	font-style: italic; */
+}
+/*============== panel ===============*/

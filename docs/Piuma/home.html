@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>Word Studio - studio di traduzioni</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="some keywords that best describe your business">
+	<meta name="description" content="a short description of your company">
+	<meta name="author" content="SRPACDY">
+
+	<!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+	================================================== -->
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/bootstrap-theme.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/layout.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/background.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen">
+
+	<!-- My CSS -->
+	<link rel="stylesheet" href="css/sidebar.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/my_style.css" type="text/css" media="screen">
+
+	<!-- My fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
+
+	<!-- Font awesome 5 -->
+	<script src="https://kit.fontawesome.com/e2ba9c850c.js" crossorigin="anonymous"></script>
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+</head>
+<!--body onload="openNav" onload="closeNav"-->
+<body>
+	<!-- Primary Page Layout
+	================================================== -->
+<div class="header bg">
+
+	<!-- Sidebar -->
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i id="sidenav_closebtn" class="far fa-times-circle"></i></a><br/>
+		<a href="#about" onclick="closeNav()"><span><i id="sidenav_info_icon"class="fas fa-info-circle"></i></span><tab0>About</a><br/>
+		<a href="#servizi" onclick="closeNav()"><span><i id="sidenav_target_icon" class="far fa-dot-circle"></i></span><tab0>Servizi</a><br/>
+		<a href="#" onclick="closeNav()"><span><i id="sidenav_languages_icon" class="fas fa-globe-americas"></i></span><tab0>Lingue</a><br>
+	</div>
+
+	<div>
+		<span id="sidenav_menu_icon" style="position:absolute; left:7px; top:5px; font-size:30px; cursor:pointer" onclick="openNav()"><i class="fas fa-bars"></i></span>
+	</div>
+
+	<!-- WELCOME PAGE -->
+	<div class="container">
+		<div class="row">
+			<header class="col-xs-12 text-center">
+				<div class="logo">
+					<!--<a href="#"><img src="images/logo.png"></a>-->
+					<h1>Welcome to <span id="word">word</span><span id="studio">studio</span></h1>
+
+					<ul class="time">
+						<li>
+							<span class="date" id="js_day"></span><br />
+							Day
+						</li>
+						<li>
+							<span class="date" id="js_month"></span><br />
+							Month
+						</li>
+						<li>
+							<span class="date" id="js_year"></span><br />
+							Year
+						</li>
+					</ul>
+				</div>
+			</header>
+
+		<!-- ABSTRACT PAGE -->
+		</div>
+		<div class="row">
+			<div class="col-xs-12 text-center">
+				<div class="down">
+					<a href="#about" class="smooth"><i class="fa fa-angle-down fa-3x"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="about" id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-10 text-center">
+				<div class="about-content">
+					<h2>About us</h2>
+					<!-- Word Studio Styles -->
+					<div>
+						<!--p style="color:green; font-size:60px; line-height: 2em; font-family:Arizonia"><em>word studio</em></p-->
+						<h2><span id="word">word</span><span id="studio">studio</span></h2>
+					</div>
+
+					<!-- Abstract -->
+					<div>
+						<p style="line-height: 2em">nasce nel 1999 con l'intento di fornire una consulenza qualificata e professionale in ambito linguistico nel campo delle traduzioni tecniche, commerciali e legali ad aziende e studi tecnici.</p>
+						<p>Scopri di più sui nostri <a href="features.html" style="color:blue">servizi</a></p>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- TARGET PAGE -->
+<div class="features">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 text-center">
+				<div class="features-content">
+					<header id="servizi">
+						<h2>Servizi</h2>
+					</header>
+					<div class="grid clearfix">
+						<div class="col-sm-4 text-center">
+							<i class="far fa-building fa-4x"></i>
+							<b>Impresa</b>
+							<p>comunicazione e profili aziendali, manuali, contratti, accordi di segretezza, normative europee, qualità, corrispondenza commerciale, cataloghi, interpretariati, telefonate in lingua</p>
+						</div>
+						<div class="col-sm-4 text-center">
+							<i class="fas fa-globe-europe fa-4x"></i>
+							<b>Turismo</b>
+							<p>comunicazione, siti web</p>
+						</div>
+						<div class="col-sm-4 text-center">
+							<i class="fas fa-gavel fa-4x"></i>
+							<b>Legale</b>
+							<p>asseverazioni e legalizzazioni, corsi di lingua ad hoc individuali e di gruppo per enti di formazione e presso il nostro studio, interpretariati in lingua</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- SOCIAL PAGE -->
+<div class="social">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 text-center">
+				<div class="social-content">
+					<h2>Social Media</h2>
+					<h3>Seguici su
+						<span style="color:#3b5998"><strong>Facebook</strong></span>
+					</h3>
+					<div class="socmed">
+						<!--a href="https://creativemarket.com/SRPACDY" target="_blank"><i class="fa fa-twitter fa-2x"></i></a-->
+						<a href="http://www.word-studio.it" target="_blank"><i class="fa fa-facebook fa-2x" style="color:#3b5998"></i></a>
+						<!--a href="https://creativemarket.com/SRPACDY" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+						<a href="https://creativemarket.com/SRPACDY" target="_blank"><i class="fa fa-vimeo-square fa-2x"></i></a>
+						<a href="https://creativemarket.com/SRPACDY" target="_blank"><i class="fa fa-tumblr fa-2x"></i></a>
+						<a href="https://creativemarket.com/SRPACDY" target="_blank"><i class="fa fa-pinterest fa-2x"></i></a>
+						<a href="https://creativemarket.com/SRPACDY" target="_blank"><i class="fa fa-flickr fa-2x"></i></a-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- SUBSCRIBE PAGE -->
+<div class="subscribe" id="subscribe">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 text-center">
+				<div class="subscribe-form">
+					<h3>Stay tuned and don't forget Sign up for latest Updates!</h3>
+					<form action="contact.php" method="post">
+						<input type="text" id="inform_email" placeholder="Enter your email and stay tuned!" onFocus="if(!this._haschanged){this.value=''};this._haschanged=true;" />
+						<input type="submit" value="Subscribe" id="in_submit" />
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- CONTACT US	 PAGE -->
+<div class="contact bg">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h1>Get In Touch</h1>
+			</div>
+			<div class="col-md-12">
+				<form action="contact.php" method="post" id="contact_form" class="contact_form">
+					<fieldset>
+						<div class="col-sm-6"><input type="text" id="name" placeholder="Name" onFocus="if(!this._haschanged){this.value=''};this._haschanged=true;" /></div>
+						<div class="col-sm-6"><input type="text" id="email" placeholder="Email" onFocus="if(!this._haschanged){this.value=''};this._haschanged=true;" /></div>
+						<div class="col-xs-12"><textarea id="msg" cols="20" rows="3" placeholder="Message" onFocus="if(!this._haschanged){this.value=''};this._haschanged=true;"></textarea></div>
+						<div class="col-xs-12 text-center">
+						<input type="submit" value="Subscribe" id="contact_submit" />
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<div class="copy">Copyright&copy;2017 <a href="https://creativemarket.com/SRPACDY" target="_blank">SRPACDY</a></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+	<!-- JS
+	================================================== -->
+
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/scroll.js" charset="utf-8"></script>
+	<!--script type="text/javascript" src="js/jquery.countdown.js" charset="utf-8"></script-->
+	<!--script type="text/javascript" src="js/countdown.js" charset="utf-8"></script-->
+	<script type="text/javascript" src="js/supersized.3.2.7.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/form.js" charset="utf-8"></script>
+
+	<!--My Scripts-->
+	<script type="text/javascript" src="js/date.js"></script>
+	<script type="text/javascript" src="js/Images/images_home.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/Sidebar/sidebar.js" charset="utf-8"></script>
+
+	<!-- Script test zone -->
+	<!--script>
+	</script-->
+
+	<!-- End Document
+	================================================== -->
+
+</body>
+</html>
