@@ -1,4 +1,8 @@
 <?php
+
+	// Allow cross-origin requests
+	header("Access-Control-Allow-Origin: https://cearlab.github.io/blockbyblock.github.io/");
+
 	// Change the 3 variables below
 	$yourName = 'Federico Oliva';
 	$yourEmail = 'federico.oliva.it@gmail.com';
