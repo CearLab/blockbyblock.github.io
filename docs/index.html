@@ -163,10 +163,13 @@
       <div class="row">
         <div class="col-xs-12 text-center">
           <div class="subscribe-form">
-            <h3>Stay tuned and don't forget Sign up for latest Updates!</h3>
+            <h3>Stay tuned and don't forget to sign up for the latest updates!</h3>
             <form action="contact.php" method="post">
-              <input type="text" id="inform_email" placeholder="Enter your email and stay tuned!"
-                onFocus="if(!this._haschanged){this.value=''};this._haschanged=true;" />
+              <!-- Added name attribute for form submission -->
+              <input type="email" id="inform_email" name="email" placeholder="Enter your email and stay tuned!"
+                onFocus="if(!this._haschanged){this.value=''};this._haschanged=true;" required />
+              <!-- Added hidden field to distinguish between forms -->
+              <input type="hidden" name="choice" value="subscribe" />
               <input type="submit" value="Subscribe" id="in_submit" />
             </form>
           </div>
@@ -183,14 +186,25 @@
         <div class="col-md-12">
           <form action="contact.php" method="post" id="contact_form" class="contact_form">
             <fieldset>
-              <div class="col-sm-6"><input type="text" id="name" placeholder="Name"
-                  onFocus="if(!this._haschanged){this.value=''};this._haschanged=true;" /></div>
-              <div class="col-sm-6"><input type="text" id="email" placeholder="Email"
-                  onFocus="if(!this._haschanged){this.value=''};this._haschanged=true;" /></div>
-              <div class="col-xs-12"><textarea id="msg" cols="20" rows="3" placeholder="Message"
-                  onFocus="if(!this._haschanged){this.value=''};this._haschanged=true;"></textarea></div>
+              <div class="col-sm-6">
+                <!-- Added name attribute -->
+                <input type="text" id="name" name="name" placeholder="Name"
+                  onFocus="if(!this._haschanged){this.value=''};this._haschanged=true;" required />
+              </div>
+              <div class="col-sm-6">
+                <!-- Changed id to be unique, added name attribute -->
+                <input type="email" id="contact_email" name="email" placeholder="Email"
+                  onFocus="if(!this._haschanged){this.value=''};this._haschanged=true;" required />
+              </div>
+              <div class="col-xs-12">
+                <!-- Added name attribute -->
+                <textarea id="msg" name="message" cols="20" rows="3" placeholder="Message"
+                  onFocus="if(!this._haschanged){this.value=''};this._haschanged=true;" required></textarea>
+              </div>
               <div class="col-xs-12 text-center">
-                <input type="submit" value="Subscribe" id="contact_submit" />
+                <!-- Changed button text to be appropriate for the contact form -->
+                <input type="hidden" name="choice" value="contact" />
+                <input type="submit" value="Send Message" id="contact_submit" />
               </div>
             </fieldset>
           </form>
@@ -198,6 +212,7 @@
       </div>
     </div>
   </div>
+
   <div class="footer">
     <div class="container">
       <div class="row">
