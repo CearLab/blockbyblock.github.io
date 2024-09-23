@@ -9,7 +9,7 @@ $(document).ready(function () {
 
 
 		$("#contact_submit").attr("value", "Sending...");
-		$.post("http://blockbyblock.scienceontheweb.net/public_html/contact.php", { email: $("#email").val(), name: $("#name").val(), message: $("#msg").val(), choice: "contact" }, function (data) {
+		$.post("https://blockbyblock.scienceontheweb.net/public_html/contact.php", { email: $("#email").val(), name: $("#name").val(), message: $("#msg").val(), choice: "contact" }, function (data) {
 
 			if (data == "success")
 				$("#contact_submit").attr("value", "Sent !");
@@ -25,7 +25,7 @@ $(document).ready(function () {
 	$("#in_submit").click(function (event) {
 
 		$("#in_submit").attr("value", "Sending...");
-		$.post("http://blockbyblock.scienceontheweb.net/public_html/contact.php", { email: $("#inform_email").val(), choice: "inform" }, function (data) {
+		$.post("https://blockbyblock.scienceontheweb.net/public_html/contact.php", { email: $("#inform_email").val(), choice: "inform" }, function (data) {
 
 			if (data == "success")
 				$("#in_submit").attr("value", "Sent !");
