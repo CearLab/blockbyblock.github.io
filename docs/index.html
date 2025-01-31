@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen">
 
   <!-- my CSS -->
+  <link rel="stylesheet" href="css/sidebar_icra.css" type="text/css" media="screen">
   <link rel="stylesheet" href="css/my_style.css" type="text/css" media="screen">
 
   <!-- Favicons
@@ -37,12 +38,32 @@
 	================================================== -->
 
   <div class="header bg">
+
+    <!-- Sidebar -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="sidenav_opt closebtn"><i class="fa fa-times-circle fa-1x"></i></a><br />
+      <a href="#about" class="sidenav_opt"><span><i class="fa fa-info-circle fa-1x"></i></span>
+        <tab0>Overview
+      </a><br />
+      <a href="#highlights" class="sidenav_opt"><span><i class="fa fa-star fa-1x"></i></span>
+        <tab0>Highlights
+      </a><br />
+      <a href="#panel" class="sidenav_opt"><span><i class="fa fa-microphone fa-1x"></i></span>
+        <tab0>Panel
+      </a><br />
+    </div>
+
+    <div>
+      <span id="sidenav_menu" class="sidenav_opt"><i class="fa fa-bars fa-1x"></i></span>
+    </div>
+
     <div class="container">
       <div class="row">
         <header class="col-xs-12 text-center">
           <div class="logo">
             <a href="#"><img src="images/ICRA-RGB.png" class="shrink-image"></a>
-            <h1>Block by Block ICRA2025 Proposed Workshop</h1>
+            <h1>Block by Block</h1>
+            <h2>Collaborative Strategies for Multi-agent Robotic Construction</h2>
             <ul class="time">
               <li>
                 <span class="days" id="days"></span><br />
@@ -73,6 +94,7 @@
       </div>
     </div>
   </div>
+
   <div class="about" id="about">
     <div class="container">
       <div class="row">
@@ -108,7 +130,8 @@
       </div>
     </div>
   </div>
-  <div class="features">
+
+  <div class="features" id="highlights">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 text-center">
@@ -139,7 +162,7 @@
     </div>
   </div>
 
-  <div class="organizers">
+  <div class="organizers" id="panel">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 text-center">
@@ -149,22 +172,26 @@
             </header>
             <div class="grid clearfix">
               <div class="col-sm-3 text-center">
-                <i style='color:rebeccapurple !important;' class="fa fa-user fa-5x"></i>
+                <img src="images/people/amir.jpeg" alt="Amir Degani" class="img-responsive"
+                  style="max-width: 100px; border-radius: 50%; display: block; margin: 0 auto;">
                 <b style='color:#FF5733 !important;'>Amir Degani</b>
                 <p style='color:white !important;'>Technion - Israel Institute of Technology</p>
               </div>
               <div class="col-sm-3 text-center">
-                <i style='color:rebeccapurple !important;' class="fa fa-user fa-5x"></i>
+                <img src="images/people/howie.jpg" alt="Howie Choset" class="img-responsive"
+                  style="max-width: 100px; border-radius: 50%; display: block; margin: 0 auto;">
                 <b style='color:#FF5733 !important;'>Howie Choset</b>
                 <p style='color:white !important;'>Carnegie Mellon University</p>
               </div>
               <div class="col-sm-3 text-center">
-                <i style='color:rebeccapurple !important;' class="fa fa-user fa-5x"></i>
+                <img src="images/people/justin.jpg" alt="Justin Werfel" class="img-responsive"
+                  style="max-width: 100px; border-radius: 50%; display: block; margin: 0 auto;">
                 <b style='color:#FF5733 !important;'>Justin Werfel</b>
                 <p style='color:white !important;'>Harvard University</p>
               </div>
               <div class="col-sm-3 text-center">
-                <i style='color:rebeccapurple !important;' class="fa fa-user fa-5x"></i>
+                <img src="images/people/federico.jpeg" alt="Federico Oliva" class="img-responsive"
+                  style="max-width: 100px; border-radius: 50%; display: block; margin: 0 auto;">
                 <b style='color:#FF5733 !important;'>Federico Oliva</b>
                 <p style='color:white !important;'>Technion - Israel Institute of Technology</p>
               </div>
@@ -175,6 +202,57 @@
     </div>
   </div>
 
+  <div class="speakers">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <div class="speakers-content">
+            <header>
+              <h2>Speakers</h2>
+            </header>
+            <div class="grid clearfix">
+              <div class="col-sm-4 text-center">
+                <img src="images/people/karenlee.jpeg" alt="Karen Lee Bar Sinai" class="img-responsive"
+                  style="max-width: 100px; object-fit: cover; border-radius: 50%; display: block; margin: 0 auto;">
+                <b style='color:#FF5733 !important;'>Karen Lee Bar Sinai</b>
+                <p style='color:white !important;'>Harvard Graduate School of Design</p>
+              </div>
+              <div class="col-sm-4 text-center">
+                <img src="images/people/spring.jpeg" alt="Spring Bearman" class="img-responsive"
+                  style="max-width: 100px; object-fit: cover; border-radius: 50%; display: block; margin: 0 auto;">
+                <b style='color:#FF5733 !important;'>Spring Bearman</b>
+                <p style='color:white !important;'>Arizona State University</p>
+              </div>
+              <div class="col-sm-4 text-center">
+                <img src="images/people/mark.jpg" alt="Mark Yim" class="img-responsive"
+                  style="max-width: 110px; object-fit: cover; border-radius: 50%; display: block; margin: 0 auto;">
+                <b style='color:#FF5733 !important;'>Mark Yim</b>
+                <p style='color:white !important;'>University of Pennsylvania</p>
+              </div>
+              <div class="col-sm-4 text-center" style="margin-top: 20px;">
+                <img src="images/people/sven.jpg" alt="Sven Koenig" class="img-responsive"
+                  style="max-width: 100px; object-fit: cover; border-radius: 50%; display: block; margin: 0 auto;">
+                <b style='color:#FF5733 !important;'>Sven Koenig</b>
+                <p style='color:white !important;'>University of Southern California</p>
+              </div>
+              <div class="col-sm-4 text-center" style="margin-top: 20px;">
+                <img src="images/people/guillaume.jpeg" alt="Guillaume Sartoretti" class="img-responsive"
+                  style="max-width: 100px; object-fit: cover; border-radius: 50%; display: block; margin: 0 auto;">
+                <b style='color:#FF5733 !important;'>Guillaume Sartoretti</b>
+                <p style='color:white !important;'>National University of Singapore</p>
+              </div>
+              <div class="col-sm-4 text-center" style="margin-top: 20px;">
+                <img src="images/people/karola.png" alt="Karola Dierichs" class="img-responsive"
+                  style="max-width: 100px; object-fit: cover; border-radius: 50%; display: block; margin: 0 auto;">
+                <b style='color:#FF5733 !important;'>Karola Dierichs</b>
+                <p style='color:white !important;'>Humboldt-Universität of Berlin</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <div class="social">
@@ -286,6 +364,7 @@
   <script type="text/javascript" src="js/form.js" charset="utf-8"></script>
 
   <script type="text/javascript" src="js/Images/images_home.js" charset="utf-8"></script>
+  <script type="text/javascript" src="js/Sidebar/sidebar.js" charset="utf-8"></script>
 
   <!-- End Document
 	================================================== -->
