@@ -8,36 +8,40 @@
 .tooltip-text {
     visibility: hidden;
     width: 60%;
-    /* Set the width to 60% of the visible screen */
-    background-color: rgba(235, 153, 0, 0.95);
-    /* Dashed yellow background */
+    background-color: rgba(235, 153, 0, 0.9);
     color: #000;
-    /* Change text color to black */
     text-align: center;
     border: 3px solid rgb(87, 86, 86);
-    /* Grey border, 3px thick */
     border-radius: 5px;
     padding: 20px;
     position: fixed;
-    /* Use fixed positioning */
     z-index: 1;
-    top: 20%;
+    top: 30%;
     /* Position the tooltip 20% from the top of the screen */
     left: 50%;
     transform: translateX(-50%);
-    /* Center the tooltip horizontally */
     opacity: 0;
     transition: opacity 0.3s;
 }
 
-/* Show the tooltip text when hovering over the container */
-.feature-item:hover .tooltip-text {
+/* Show the tooltip text when the feature item is clicked */
+.feature-item.active .tooltip-text {
     visibility: visible;
     opacity: 1;
+}
+
+/* Close button inside the tooltip */
+.close-tooltip {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #FF5733;
+    /* Same color as the home button */
 }
 
 /* Change icon color on hover */
 .feature-item:hover i {
     color: #9043b4;
-    /* Use the same purple color as other parts of the website */
 }

@@ -50,7 +50,7 @@ body {
 
 /* Home Button CSS */
 .home-button {
-  position: absolute;
+  position: fixed;
   top: 10px;
   right: 15px;
   background-color: #9043b400;
@@ -67,6 +67,12 @@ body {
 .home-button:hover {
   background-color: #9043b4;
   color: rgb(216, 130, 18);
+}
+
+.home-button:active,
+.home-button:visited {
+  background-color: #FF5733;
+  color: white;
 }
 
 .home-button .fa-home {
@@ -105,7 +111,7 @@ body {
 
 #sidenav_menu {
   position: absolute;
-  left: 10px;
+  left: 15px;
   top: 20px;
   font-size: 30px;
   cursor: pointer;
