@@ -25,6 +25,7 @@
   <!-- my CSS -->
   <link rel="stylesheet" href="css/sidebar_icra.css" type="text/css" media="screen">
   <link rel="stylesheet" href="css/my_style.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="css/tooltip.css" type="text/css" media="screen">
 
   <!-- Favicons
 	================================================== -->
@@ -36,6 +37,11 @@
 
   <!-- Primary Page Layout
 	================================================== -->
+
+  <!-- Home Button -->
+  <a href="#" class="home-button">
+    <i class="fa fa-home fa-4x"></i>
+  </a>
 
   <div class="header bg">
 
@@ -54,10 +60,10 @@
     </div>
 
     <div>
-      <span id="sidenav_menu" class="sidenav_opt"><i class="fa fa-bars fa-1x"></i></span>
+      <span id="sidenav_menu" class="sidenav_opt"><i class="fa fa-bars fa-2x"></i></span>
     </div>
 
-    <div class="container">
+    <div class="container" id="home">
       <div class="row">
         <header class="col-xs-12 text-center">
           <div class="logo">
@@ -140,20 +146,29 @@
               <h2>Highlights</h2>
             </header>
             <div class="grid clearfix">
-              <div class="col-sm-4 text-center">
+              <div class="col-sm-4 text-center feature-item">
                 <i class="fa fa-star fa-5x"></i>
                 <b style='color:#FF5733 !important;'>Expert talks</b>
                 <p>Insightful talks from top notch invited speakers!</p>
+                <div class="tooltip-text">
+                  <h2>details about Expert talks</h2>
+                </div>
               </div>
-              <div class="col-sm-4 text-center">
+              <div class="col-sm-4 text-center feature-item">
                 <i class="fa fa-coffee fa-4x"></i>
                 <b style='color:#FF5733 !important;'>World Cafè</b>
                 <p>Join our innovative interactive discussion session!</p>
+                <div class="tooltip-text">
+                  <h2>how dows it work</h2>
+                </div>
               </div>
-              <div class="col-sm-4 text-center">
+              <div class="col-sm-4 text-center feature-item">
                 <i class="fa fa-picture-o fa-4x"></i>
                 <b style='color:#FF5733 !important;'>Poster session</b>
                 <p>Present your contributed work!</p>
+                <div class="tooltip-text">
+                  <h2>rules and submission link</h2>
+                </div>
               </div>
             </div>
           </div>
@@ -280,7 +295,73 @@
     </div>
   </div>
 
-  <div class="subscribe" id="subscribe">
+  <div class="schedule" id="schedule">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <div class="schedule-content">
+            <header>
+              <h2>Schedule</h2>
+            </header>
+            <div class="row">
+              <div class="col-sm-6">
+                <h3>Morning </h3>
+                <div class="schedule-list" style="margin-top: 20px;">
+                  <div>
+                    <span class="time" style="font-size: 1.7em;"><b>09:00 - 09:30</b></span>
+                    <span class="event" style="font-size: 1.7em; color: rgb(153, 2, 2);">Opening Remarks</span>
+                  </div>
+                  <div>
+                    <span class="time" style="font-size: 1.7em;"><b>09:30 - 10:40</b></span>
+                    <span class="event" style="font-size: 1.7em; color: rgb(153, 2, 2);">Keynote Speakers</span>
+                  </div>
+                  <div>
+                    <span class="time" style="font-size: 1.7em;"><b>10:45 - 11:00</b></span>
+                    <span class="event" style="font-size: 1.7em; color: rgb(153, 2, 2);">Coffee Break</span>
+                  </div>
+                  <div>
+                    <span class="time" style="font-size: 1.7em;"><b>11:00 - 12:30</b></span>
+                    <span class="event" style="font-size: 1.7em; color: rgb(153, 2, 2);">Keynote Speakers</span>
+                  </div>
+                  <div>
+                    <span class="time" style="font-size: 1.7em;"><b>12:30 - 13:30</b></span>
+                    <span class="event" style="font-size: 1.7em; color: rgb(153, 2, 2);">Lunch Break</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <h3>Afternoon</h3>
+                <div class="schedule-list" style="margin-top: 20px;">
+                  <div>
+                    <span class="time" style="font-size: 1.7em;"><b>13:30 - 14:30</b></span>
+                    <span class="event" style="font-size: 1.7em; color: rgb(153, 2, 2);">Poster session</span>
+                  </div>
+                  <div>
+                    <span class="time" style="font-size: 1.7em;"><b>14:30 - 15:15</b></span>
+                    <span class="event" style="font-size: 1.7em; color: rgb(153, 2, 2);">Keynote Speakers</span>
+                  </div>
+                  <div>
+                    <span class="time" style="font-size: 1.7em;"><b>15:15 - 15:30</b></span>
+                    <span class="event" style="font-size: 1.7em; color: rgb(153, 2, 2);">Coffee Break</span>
+                  </div>
+                  <div>
+                    <span class="time" style="font-size: 1.7em;"><b>15:30 - 16:30</b></span>
+                    <span class="event" style="font-size: 1.7em; color: rgb(153, 2, 2);">World Cafe</span>
+                  </div>
+                  <div>
+                    <span class="time" style="font-size: 1.7em;"><b>17:00 - 17:30</b></span>
+                    <span class="event" style="font-size: 1.7em; color: rgb(153, 2, 2);">Feedbacks and Closing
+                      Remarks</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="subscribe" id="subscribe" style="margin-top: 40px;">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 text-center">
