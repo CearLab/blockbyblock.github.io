@@ -81,7 +81,7 @@
 
 .floating-bottom {
     position: fixed;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 40%;
     /* Adjust as needed */
