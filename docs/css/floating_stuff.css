@@ -80,12 +80,9 @@
 }
 
 .floating-bottom {
-    position: absolute;
-    top: 90px;
-    /* Adjust as needed */
-    left: -280px;
-    /* transform: translateX(-50%); */
-    /* Adjust as needed */
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: 500px;
     /* Adjust as needed */
     z-index: 1000;
