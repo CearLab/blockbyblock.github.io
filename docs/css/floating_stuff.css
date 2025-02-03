@@ -15,12 +15,12 @@
 
 .floating-top-left {
     position: absolute;
-    top: 600px;
+    top: 75%;
     /* Adjust as needed */
-    left: 0;
+    left: 25%;
     /* transform: translateX(-50%); */
     /* Adjust as needed */
-    width: 300px;
+    width: 20%;
     /* Adjust as needed */
     z-index: 1000;
     /* Ensure it stays on top */
@@ -48,12 +48,12 @@
 
 .floating-top-right {
     position: absolute;
-    top: 600px;
+    top: 75%;
     /* Adjust as needed */
-    left: 530px;
+    left: 55%;
     /* transform: translateX(-50%); */
     /* Adjust as needed */
-    width: 300px;
+    width: 20%;
     /* Adjust as needed */
     z-index: 1000;
     /* Ensure it stays on top */
@@ -80,8 +80,8 @@
 }
 
 .floating-bottom {
-    position: fixed;
-    top: 25%;
+    position: absolute;
+    top: 27%;
     left: 40%;
     width: 20%;
     /* Adjust as needed */
