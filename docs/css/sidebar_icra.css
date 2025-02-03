@@ -110,8 +110,8 @@ body {
 }
 
 #sidenav_menu {
-  position: absolute;
-  left: 15px;
+  position: fixed;
+  left: 35px;
   top: 20px;
   font-size: 30px;
   cursor: pointer;
