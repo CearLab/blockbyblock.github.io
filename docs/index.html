@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="css/sidebar_icra.css" type="text/css" media="screen">
   <link rel="stylesheet" href="css/my_style.css" type="text/css" media="screen">
   <link rel="stylesheet" href="css/tooltip.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="css/floating_stuff.css" type="text/css" media="screen">
 
   <!-- Favicons
 	================================================== -->
@@ -64,7 +65,10 @@
     </div>
 
     <div class="container" id="home">
-      <div class="row">
+      <img src="images/gif/robots_push.gif" alt="Floating" class="floating-top-left">
+      <img src="images/gif/prob_sim.gif" alt="Floating" class="floating-top-right">
+      <img src="images/gif/robots_termite_HD.gif" alt="Floating" class="floating-bottom">
+      <div class="row" style="margin-top: 100px;">
         <header class="col-xs-12 text-center">
           <div class="logo">
             <a href="#"><img src="images/ICRA-RGB.png" class="shrink-image"></a>
@@ -146,14 +150,10 @@
               <h2>Highlights</h2>
             </header>
             <div class="grid clearfix">
-              <div class="col-sm-4 text-center feature-item">
-                <i class="fa fa-star fa-5x"></i>
-                <b style='color:#FF5733 !important;'>Expert talks</b>
+              <div class="col-sm-4 text-center feature-item-no-tooltip">
+                <a href="#panel"><i class="fa fa-star fa-5x"></i></a>
+                <b class="hover-purple" style='color:#FF5733 !important;'>Expert talks</b>
                 <p>Insightful talks from top notch invited speakers!</p>
-                <div class="tooltip-text">
-                  <i class="fa fa-times-circle close-tooltip"></i>
-                  <h2>details about Expert talks</h2>
-                </div>
               </div>
               <div class="col-sm-4 text-center feature-item">
                 <i class="fa fa-coffee fa-4x"></i>
@@ -189,29 +189,37 @@
               <h2>Organizers</h2>
             </header>
             <div class="grid clearfix">
-              <div class="col-sm-3 text-center">
-                <img src="images/people/amir.jpeg" alt="Amir Degani" class="img-responsive"
-                  style="max-width: 100px; border-radius: 50%; display: block; margin: 0 auto;">
-                <b style='color:#FF5733 !important;'>Amir Degani</b>
-                <p style='color:white !important;'>Technion - Israel Institute of Technology</p>
+              <div class="col-sm-3 text-center feature-item-image">
+                <a href="https://adegani.net.technion.ac.il/" target="_blank">
+                  <img src="images/people/amir.jpeg" alt="Amir Degani" class="img-responsive"
+                    style="max-width: 100px; border-radius: 50%; display: block; margin: 0 auto;">
+                  <b style='color:#FF5733 !important;'>Amir Degani</b>
+                  <p style='color:white !important;'>Technion - Israel Institute of Technology</p>
+                </a>
               </div>
-              <div class="col-sm-3 text-center">
-                <img src="images/people/howie.jpg" alt="Howie Choset" class="img-responsive"
-                  style="max-width: 100px; border-radius: 50%; display: block; margin: 0 auto;">
-                <b style='color:#FF5733 !important;'>Howie Choset</b>
-                <p style='color:white !important;'>Carnegie Mellon University</p>
+              <div class="col-sm-3 text-center feature-item-image">
+                <a href="https://www.ri.cmu.edu/ri-faculty/howie-choset/" target="_blank">
+                  <img src="images/people/howie.jpg" alt="Howie Choset" class="img-responsive"
+                    style="max-width: 100px; border-radius: 50%; display: block; margin: 0 auto;">
+                  <b style='color:#FF5733 !important;'>Howie Choset</b>
+                  <p style='color:white !important;'>Carnegie Mellon University</p>
+                </a>
               </div>
-              <div class="col-sm-3 text-center">
-                <img src="images/people/justin.jpg" alt="Justin Werfel" class="img-responsive"
-                  style="max-width: 100px; border-radius: 50%; display: block; margin: 0 auto;">
-                <b style='color:#FF5733 !important;'>Justin Werfel</b>
-                <p style='color:white !important;'>Harvard University</p>
+              <div class="col-sm-3 text-center feature-item-image">
+                <a href="https://people.seas.harvard.edu/~jkwerfel/" target="_blank">
+                  <img src="images/people/justin.jpg" alt="Justin Werfel" class="img-responsive"
+                    style="max-width: 100px; border-radius: 50%; display: block; margin: 0 auto;">
+                  <b style='color:#FF5733 !important;'>Justin Werfel</b>
+                  <p style='color:white !important;'>Harvard University</p>
+                </a>
               </div>
-              <div class="col-sm-3 text-center">
-                <img src="images/people/federico.jpeg" alt="Federico Oliva" class="img-responsive"
-                  style="max-width: 100px; border-radius: 50%; display: block; margin: 0 auto;">
-                <b style='color:#FF5733 !important;'>Federico Oliva</b>
-                <p style='color:white !important;'>Technion - Israel Institute of Technology</p>
+              <div class="col-sm-3 text-center feature-item-image">
+                <a href="https://github.com/fedeoli" target="_blank">
+                  <img src="images/people/federico.jpeg" alt="Federico Oliva" class="img-responsive"
+                    style="max-width: 100px; border-radius: 50%; display: block; margin: 0 auto;">
+                  <b style='color:#FF5733 !important;'>Federico Oliva</b>
+                  <p style='color:white !important;'>Technion - Israel Institute of Technology</p>
+                </a>
               </div>
             </div>
           </div>
@@ -229,41 +237,53 @@
               <h2>Speakers</h2>
             </header>
             <div class="grid clearfix">
-              <div class="col-sm-4 text-center">
-                <img src="images/people/karenlee.jpeg" alt="Karen Lee Bar Sinai" class="img-responsive"
-                  style="max-width: 100px; object-fit: cover; border-radius: 50%; display: block; margin: 0 auto;">
-                <b style='color:#FF5733 !important;'>Karen Lee Bar Sinai</b>
-                <p style='color:white !important;'>Harvard Graduate School of Design</p>
+              <div class="col-sm-4 text-center feature-item-image">
+                <a href="https://www.gsd.harvard.edu/person/karen-lee-bar-sinai/" target="_blank">
+                  <img src="images/people/karenlee.jpeg" alt="Karen Lee Bar Sinai" class="img-responsive"
+                    style="max-width: 100px; object-fit: cover; border-radius: 50%; display: block; margin: 0 auto;">
+                  <b style='color:#FF5733 !important;'>Karen Lee Bar Sinai</b>
+                  <p style='color:white !important;'>Harvard Graduate School of Design</p>
+                </a>
               </div>
-              <div class="col-sm-4 text-center">
-                <img src="images/people/spring.jpeg" alt="Spring Bearman" class="img-responsive"
-                  style="max-width: 100px; object-fit: cover; border-radius: 50%; display: block; margin: 0 auto;">
-                <b style='color:#FF5733 !important;'>Spring Bearman</b>
-                <p style='color:white !important;'>Arizona State University</p>
+              <div class="col-sm-4 text-center feature-item-image">
+                <a href="https://faculty.engineering.asu.edu/acs/person/spring-berman" target="_blank">
+                  <img src="images/people/spring.jpeg" alt="Spring Bearman" class="img-responsive"
+                    style="max-width: 100px; object-fit: cover; border-radius: 50%; display: block; margin: 0 auto;">
+                  <b style='color:#FF5733 !important;'>Spring Bearman</b>
+                  <p style='color:white !important;'>Arizona State University</p>
+                </a>
               </div>
-              <div class="col-sm-4 text-center">
-                <img src="images/people/mark.jpg" alt="Mark Yim" class="img-responsive"
-                  style="max-width: 110px; object-fit: cover; border-radius: 50%; display: block; margin: 0 auto;">
-                <b style='color:#FF5733 !important;'>Mark Yim</b>
-                <p style='color:white !important;'>University of Pennsylvania</p>
+              <div class="col-sm-4 text-center feature-item-image">
+                <a href="https://www.grasp.upenn.edu/people/mark-yim/" target="_blank">
+                  <img src="images/people/mark.jpg" alt="Mark Yim" class="img-responsive"
+                    style="max-width: 110px; object-fit: cover; border-radius: 50%; display: block; margin: 0 auto;">
+                  <b style='color:#FF5733 !important;'>Mark Yim</b>
+                  <p style='color:white !important;'>University of Pennsylvania</p>
+                </a>
               </div>
-              <div class="col-sm-4 text-center" style="margin-top: 20px;">
-                <img src="images/people/sven.jpg" alt="Sven Koenig" class="img-responsive"
-                  style="max-width: 100px; object-fit: cover; border-radius: 50%; display: block; margin: 0 auto;">
-                <b style='color:#FF5733 !important;'>Sven Koenig</b>
-                <p style='color:white !important;'>University of Southern California</p>
+              <div class="col-sm-4 text-center feature-item-image" style="margin-top: 20px;">
+                <a href="https://idm-lab.org/" target="_blank">
+                  <img src="images/people/sven.jpg" alt="Sven Koenig" class="img-responsive"
+                    style="max-width: 100px; object-fit: cover; border-radius: 50%; display: block; margin: 0 auto;">
+                  <b style='color:#FF5733 !important;'>Sven Koenig</b>
+                  <p style='color:white !important;'>University of Southern California</p>
+                </a>
               </div>
-              <div class="col-sm-4 text-center" style="margin-top: 20px;">
-                <img src="images/people/guillaume.jpeg" alt="Guillaume Sartoretti" class="img-responsive"
-                  style="max-width: 100px; object-fit: cover; border-radius: 50%; display: block; margin: 0 auto;">
-                <b style='color:#FF5733 !important;'>Guillaume Sartoretti</b>
-                <p style='color:white !important;'>National University of Singapore</p>
+              <div class="col-sm-4 text-center feature-item-image" style="margin-top: 20px;">
+                <a href="https://cde.nus.edu.sg/me/staff/sartoretti-guillaume-a/" target="_blank">
+                  <img src="images/people/guillaume.jpeg" alt="Guillaume Sartoretti" class="img-responsive"
+                    style="max-width: 100px; object-fit: cover; border-radius: 50%; display: block; margin: 0 auto;">
+                  <b style='color:#FF5733 !important;'>Guillaume Sartoretti</b>
+                  <p style='color:white !important;'>National University of Singapore</p>
+                </a>
               </div>
-              <div class="col-sm-4 text-center" style="margin-top: 20px;">
-                <img src="images/people/karola.png" alt="Karola Dierichs" class="img-responsive"
-                  style="max-width: 100px; object-fit: cover; border-radius: 50%; display: block; margin: 0 auto;">
-                <b style='color:#FF5733 !important;'>Karola Dierichs</b>
-                <p style='color:white !important;'>Humboldt-Universität of Berlin</p>
+              <div class="col-sm-4 text-center feature-item-image" style="margin-top: 20px;">
+                <a href="https://www.matters-of-activity.de/en/members/1703/prof-dr-karola-dierichs" target="_blank">
+                  <img src="images/people/karola.png" alt="Karola Dierichs" class="img-responsive"
+                    style="max-width: 100px; object-fit: cover; border-radius: 50%; display: block; margin: 0 auto;">
+                  <b style='color:#FF5733 !important;'>Karola Dierichs</b>
+                  <p style='color:white !important;'>Humboldt-Universität of Berlin</p>
+                </a>
               </div>
             </div>
           </div>

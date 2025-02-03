@@ -44,4 +44,29 @@
 /* Change icon color on hover */
 .feature-item:hover i {
     color: #9043b4;
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+.feature-item-no-tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.feature-item-no-tooltip:hover i {
+    color: #9043b4;
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+/* Feature item for images */
+.feature-item-image {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+/* Enlarge image on hover */
+.feature-item-image:hover {
+    transform: scale(1.1);
 }

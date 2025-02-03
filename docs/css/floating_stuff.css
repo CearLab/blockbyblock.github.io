@@ -1,0 +1,98 @@
+/* Floating GIF animation */
+@keyframes float-top-left {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(20px, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.floating-top-left {
+    position: absolute;
+    top: 600px;
+    /* Adjust as needed */
+    left: 0;
+    /* transform: translateX(-50%); */
+    /* Adjust as needed */
+    width: 300px;
+    /* Adjust as needed */
+    z-index: 1000;
+    /* Ensure it stays on top */
+    /* animation: float-top-left 5s ease-in-out infinite; */
+    border-radius: 30%;
+    /* Crop as ellipse */
+    box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.1);
+    /* Blurred edges */
+}
+
+/* Floating GIF animation */
+@keyframes float-top-right {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-20px, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.floating-top-right {
+    position: absolute;
+    top: 600px;
+    /* Adjust as needed */
+    left: 530px;
+    /* transform: translateX(-50%); */
+    /* Adjust as needed */
+    width: 300px;
+    /* Adjust as needed */
+    z-index: 1000;
+    /* Ensure it stays on top */
+    /* animation: float-top-right 5s ease-in-out infinite; */
+    border-radius: 30%;
+    /* Crop as ellipse */
+    box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.1);
+    /* Blurred edges */
+}
+
+/* Floating GIF animation */
+@keyframes float-bottom {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(20px, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.floating-bottom {
+    position: absolute;
+    top: 90px;
+    /* Adjust as needed */
+    left: -280px;
+    /* transform: translateX(-50%); */
+    /* Adjust as needed */
+    width: 500px;
+    /* Adjust as needed */
+    z-index: 1000;
+    /* Ensure it stays on top */
+    /* animation: float-bottom 5s ease-in-out infinite; */
+    border-radius: 30%;
+    /* Crop as ellipse */
+    box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.1);
+    /* Blurred edges */
+}
