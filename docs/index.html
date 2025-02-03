@@ -57,6 +57,9 @@
       <a href="#panel" class="sidenav_opt"><span><i class="fa fa-microphone fa-1x"></i></span>
         <tab0>Panel
       </a><br />
+      <a href="#schedule" class="sidenav_opt"><span><i class="fa fa-clock-o fa-1x"></i></span>
+        <tab0>Schedule
+      </a><br />
     </div>
 
     <div>
@@ -154,14 +157,11 @@
                 <b class="hover-purple" style='color:#FF5733 !important;'>Expert talks</b>
                 <p>Insightful talks from top notch invited speakers!</p>
               </div>
-              <div class="col-sm-4 text-center feature-item">
-                <i class="fa fa-coffee fa-4x"></i>
+              <div class="col-sm-4 text-center feature-item-no-tooltip">
+                <a href="https://theworldcafe.com/key-concepts-resources/world-cafe-method/" target="_blank"><i
+                    class="fa fa-coffee fa-4x"></i></a>
                 <b style='color:#FF5733 !important;'>World Cafè</b>
                 <p>Join our innovative interactive discussion session!</p>
-                <div class="tooltip-text">
-                  <i class="fa fa-times-circle close-tooltip"></i>
-                  <h2>how does it work</h2>
-                </div>
               </div>
               <div class="col-sm-4 text-center feature-item">
                 <i class="fa fa-picture-o fa-4x"></i>
@@ -383,17 +383,16 @@
       </div>
     </div>
   </div>
-  <div class="subscribe" id="subscribe" style="margin-top: 40px;">
+
+  <!-- <div class="subscribe" id="subscribe" style="margin-top: 40px;">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 text-center">
           <div class="subscribe-form">
             <h3>Stay tuned and don't forget to sign up for the latest updates!</h3>
             <form action="https://blockbyblock.scienceontheweb.net/public_html/contact.php" method="post">
-              <!-- Added name attribute for form submission -->
               <input type="text" id="inform_email" name="email" placeholder="Enter your email and stay tuned!"
                 onFocus="if(!this._haschanged){this.value=''};this._haschanged=true;" required />
-              <!-- Added hidden field to distinguish between forms -->
               <input type="hidden" name="choice" value="subscribe" />
               <input type="submit" value="Subscribe" id="in_submit" style='background-color:#FF5733 !important;' />
             </form>
@@ -401,9 +400,9 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
-  <div class="contact bg">
+  <!-- <div class="contact bg">
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
@@ -414,22 +413,18 @@
             id="contact_form" class="contact_form">
             <fieldset>
               <div class="col-sm-6">
-                <!-- Added name attribute -->
                 <input type="text" id="name" name="name" placeholder="Name"
                   onFocus="if(!this._haschanged){this.value=''};this._haschanged=true;" required />
               </div>
               <div class="col-sm-6">
-                <!-- Changed id to be unique, added name attribute -->
                 <input type="email" id="contact_email" name="email" placeholder="Email"
                   onFocus="if(!this._haschanged){this.value=''};this._haschanged=true;" required />
               </div>
               <div class="col-xs-12">
-                <!-- Added name attribute -->
                 <textarea id="msg" name="message" cols="20" rows="3" placeholder="Message"
                   onFocus="if(!this._haschanged){this.value=''};this._haschanged=true;" required></textarea>
               </div>
               <div class="col-xs-12 text-center">
-                <!-- Changed button text to be appropriate for the contact form -->
                 <input type="hidden" name="choice" value="contact" />
                 <input type="submit" value="Send Message" id="contact_submit"
                   style='background-color:#FF5733 !important;' />
@@ -439,9 +434,9 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
-  <div class="footer">
+  <div class="footer" style="margin-top: 40px;">
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">

@@ -65,8 +65,8 @@ body {
 }
 
 .home-button:hover {
-  background-color: #9043b4;
-  color: rgb(216, 130, 18);
+  color: #9043b4;
+  transition: 0.8s;
 }
 
 .home-button:active,
@@ -103,9 +103,13 @@ body {
   color: #9043b4;
 }
 
-.sidenav_opt:hover,
 .fa-times-circle:hover {
   color: rgb(139, 2, 2);
+  transition: 0.8s;
+}
+
+.sidenav_opt:hover {
+  color: rgb(216, 130, 18);
   transition: 0.8s;
 }
 
