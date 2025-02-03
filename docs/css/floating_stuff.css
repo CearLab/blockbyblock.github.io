@@ -82,7 +82,7 @@
 .floating-bottom {
     position: fixed;
     top: 0%;
-    left: 50%;
+    left: 0%;
     width: 25%;
     /* Adjust as needed */
     z-index: 1000;
