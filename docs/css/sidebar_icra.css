@@ -64,19 +64,17 @@ body {
   transition: background-color 0.3s;
 }
 
+.home-button:visited {
+  color: rgb(216, 130, 18);
+}
+
 .home-button:hover {
   color: #9043b4;
   transition: 0.8s;
 }
 
-.home-button:active,
-.home-button:visited {
-  background-color: #FF5733;
-  color: white;
-}
-
-.home-button .fa-home {
-  margin-right: 5px;
+.home-button:active {
+  color: rgb(216, 130, 18);
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */

@@ -70,3 +70,9 @@
 .feature-item-image:hover {
     transform: scale(1.1);
 }
+
+
+.custom-indicators {
+    bottom: -40px;
+    /* Adjust this value as needed */
+}
