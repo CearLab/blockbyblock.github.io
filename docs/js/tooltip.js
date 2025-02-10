@@ -14,5 +14,11 @@ document.addEventListener('DOMContentLoaded', function () {
             e.stopPropagation(); // Prevent the click event from bubbling up to the feature item
             item.classList.remove('active');
         });
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                item.classList.remove('active');
+            }
+        });
     });
 });
