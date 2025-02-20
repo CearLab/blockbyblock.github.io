@@ -118,3 +118,11 @@ body {
   font-size: 30px;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+
+  /* Target screens smaller than 768px */
+  .hide-on-mobile {
+    display: none;
+  }
+}
