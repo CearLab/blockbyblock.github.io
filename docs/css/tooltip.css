@@ -2,26 +2,30 @@
 .feature-item {
     position: relative;
     display: inline-block;
+    z-index: 1;
+    cursor: pointer;
 }
 
 /* Tooltip text */
 .tooltip-text {
     visibility: hidden;
     width: 60%;
-    background-color: rgba(235, 153, 0, 0.9);
+    background-color: rgba(231, 179, 81, 1);
     color: #000;
     text-align: center;
     border: 3px solid rgb(87, 86, 86);
     border-radius: 5px;
     padding: 20px;
     position: fixed;
-    z-index: 1;
     top: 30%;
     /* Position the tooltip 20% from the top of the screen */
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
     transition: opacity 0.3s;
+    pointer-events: auto;
+    z-index: 2;
+    display: inline-block;
 }
 
 /* Show the tooltip text when the feature item is clicked */
@@ -46,6 +50,8 @@
     color: #9043b4;
     transform: scale(1.1);
     transition: transform 0.5s;
+    display: inline-block;
+    z-index: 1;
 }
 
 .feature-item-no-tooltip {
@@ -70,7 +76,6 @@
 .feature-item-image:hover {
     transform: scale(1.1);
 }
-
 
 .custom-indicators {
     bottom: -40px;
