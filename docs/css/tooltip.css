@@ -1,9 +1,9 @@
 /* Tooltip container */
 .feature-item {
     position: relative;
-    display: inline-block;
-    z-index: 1;
     cursor: pointer;
+    z-index: 1;
+    display: inline-block;
 }
 
 /* Tooltip text */
@@ -23,15 +23,21 @@
     transform: translateX(-50%);
     opacity: 0;
     transition: opacity 0.3s;
-    pointer-events: auto;
+    pointer-events: none;
     z-index: 2;
-    display: inline-block;
+
 }
 
-/* Show the tooltip text when the feature item is clicked */
+.feature-item.active {
+    z-index: 2;
+}
+
 .feature-item.active .tooltip-text {
     visibility: visible;
+    z-index: 3;
+    display: inline-block;
     opacity: 1;
+    pointer-events: auto;
 }
 
 /* Close button inside the tooltip */
