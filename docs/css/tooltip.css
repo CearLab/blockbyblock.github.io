@@ -1,18 +1,10 @@
-/* Tooltip container */
-.feature-item {
-    position: relative;
-    cursor: pointer;
-    z-index: 1;
-    display: inline-block;
-}
-
-/* Tooltip text */
+/* TOOLTIP */
 .tooltip-text {
     visibility: hidden;
     width: 60%;
-    background-color: rgba(231, 179, 81, 1);
+    background-color: rgba(231, 179, 81, 0.9);
     color: #000;
-    text-align: center;
+    text-align: justify;
     border: 3px solid rgb(87, 86, 86);
     border-radius: 5px;
     padding: 20px;
@@ -21,28 +13,84 @@
     /* Position the tooltip 20% from the top of the screen */
     left: 50%;
     transform: translateX(-50%);
-    opacity: 0;
-    transition: opacity 0.3s;
     pointer-events: none;
-    z-index: 2;
+    z-index: 3;
+}
 
+.close-tooltip {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #9f07c5;
+    /* Same color as the home button */
+}
+
+/* FEATURE-ITEM */
+/* Tooltip container */
+.feature-item {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    z-index: 1;
+    /* Ensure .feature-item has a lower z-index */
+}
+
+.feature-item .tooltip-text {
+    visibility: hidden;
+    width: 60%;
+    background-color: rgba(231, 179, 81, 0.9);
+    color: #000;
+    text-align: justify;
+    border: 3px solid rgb(87, 86, 86);
+    border-radius: 5px;
+    padding: 20px;
+    position: fixed;
+    top: 30%;
+    /* Position the tooltip 20% from the top of the screen */
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+    z-index: 3;
+}
+
+.feature-item .close-tooltip {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #FF5733;
+    /* Same color as the home button */
 }
 
 .feature-item.active {
-    z-index: 2;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
 }
 
 .feature-item.active .tooltip-text {
     visibility: visible;
+    width: 60%;
+    background-color: rgba(231, 179, 81, 1);
+    color: #000;
+    text-align: justify;
+    border: 3px solid rgb(87, 86, 86);
+    border-radius: 5px;
+    padding: 20px;
+    position: fixed;
+    top: 30%;
+    /* Position the tooltip 20% from the top of the screen */
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
     z-index: 3;
-    display: inline-block;
-    opacity: 1;
-    pointer-events: auto;
 }
 
-/* Close button inside the tooltip */
-.close-tooltip {
-    position: absolute;
+.feature-item.active .close-tooltip {
+    position: fixed;
     top: 10px;
     right: 20px;
     font-size: 24px;
@@ -52,14 +100,14 @@
 }
 
 /* Change icon color on hover */
-.feature-item:hover i {
+.feature-item:hover {
     color: #9043b4;
     transform: scale(1.1);
     transition: transform 0.5s;
     display: inline-block;
-    z-index: 1;
 }
 
+/* FEATURE-ITEM-NO-TOOLTIP */
 .feature-item-no-tooltip {
     position: relative;
     display: inline-block;
@@ -71,6 +119,7 @@
     transition: transform 0.5s;
 }
 
+/* FEATURE-ITEM-IMAGE */
 /* Feature item for images */
 .feature-item-image {
     position: relative;
@@ -83,7 +132,33 @@
     transform: scale(1.1);
 }
 
+/* CUSTOM INDICATORS */
 .custom-indicators {
     bottom: -40px;
     /* Adjust this value as needed */
+}
+
+.tooltip-text {
+    visibility: hidden;
+    width: 60%;
+    background-color: rgba(231, 179, 81, 0.9);
+    color: #000;
+    text-align: center;
+    border: 3px solid rgb(87, 86, 86);
+    border-radius: 5px;
+    padding: 20px;
+    position: fixed;
+    /* Keep it fixed to the viewport */
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 1000;
+    /* Ensure tooltip is above all .feature-item elements */
+}
+
+.feature-item.active .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
 }
