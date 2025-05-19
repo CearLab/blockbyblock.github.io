@@ -203,7 +203,7 @@
 
     .feature-item .tooltip-text {
         visibility: hidden;
-        width: 60%;
+        width: 80%;
         background-color: rgba(231, 179, 81, 0.9);
         color: #000;
         text-align: justify;
