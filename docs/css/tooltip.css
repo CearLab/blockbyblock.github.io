@@ -59,7 +59,7 @@
     position: fixed;
     top: 10px;
     right: 20px;
-    font-size: 24px;
+    font-size: 16px;
     cursor: pointer;
     color: #FF5733;
     /* Same color as the home button */
@@ -93,7 +93,7 @@
     position: fixed;
     top: 10px;
     right: 20px;
-    font-size: 24px;
+    font-size: 16px;
     cursor: pointer;
     color: #FF5733;
     /* Same color as the home button */
@@ -158,10 +158,15 @@
     font-size: 16px;
 }
 
+.tooltip-text h3 {
+    font-size: 1.5em !important;
+}
+
 .feature-item.active .tooltip-text {
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
+    font-size: 16px;
 }
 
 /* Smaller font size for mobile devices */
@@ -194,5 +199,9 @@
         overflow-y: auto;
         /* Add vertical scrolling if content exceeds max height */
         font-size: 16px;
+    }
+
+    .tooltip-text h3 {
+        font-size: 1.0em !important;
     }
 }
