@@ -169,4 +169,28 @@
         font-size: 16px;
         /* Adjust the size for mobile */
     }
+
+    .tooltip-text {
+        visibility: hidden;
+        width: 60%;
+        background-color: rgba(231, 179, 81, 0.9);
+        color: #000;
+        text-align: center;
+        border: 3px solid rgb(87, 86, 86);
+        border-radius: 5px;
+        padding: 20px;
+        position: fixed;
+        /* Keep it fixed to the viewport */
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        z-index: 1000;
+        /* Ensure tooltip is above all .feature-item elements */
+        max-height: 70vh;
+        /* Set maximum height to 70% of the viewport height */
+        overflow-y: auto;
+        /* Add vertical scrolling if content exceeds max height */
+        font-size: 16px;
+    }
 }
