@@ -187,18 +187,36 @@
         padding: 20px;
         position: fixed;
         /* Keep it fixed to the viewport */
-        top: 30%;
+        top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
         pointer-events: none;
         z-index: 1000;
         /* Ensure tooltip is above all .feature-item elements */
         /* max-height: 70vh; */
-        max-width: 80vh;
+        /* max-width: 80vh; */
         /* Set maximum height to 70% of the viewport height */
         overflow-y: auto;
         /* Add vertical scrolling if content exceeds max height */
         font-size: 16px;
+    }
+
+    .feature-item .tooltip-text {
+        visibility: hidden;
+        width: 60%;
+        background-color: rgba(231, 179, 81, 0.9);
+        color: #000;
+        text-align: justify;
+        border: 3px solid rgb(87, 86, 86);
+        border-radius: 5px;
+        padding: 20px;
+        position: fixed;
+        top: 60%;
+        /* Position the tooltip 20% from the top of the screen */
+        left: 50%;
+        transform: translateX(-50%);
+        pointer-events: none;
+        z-index: 3;
     }
 
     .tooltip-text h3 {
