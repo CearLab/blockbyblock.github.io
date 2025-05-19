@@ -162,3 +162,11 @@
     opacity: 1;
     pointer-events: auto;
 }
+
+/* Smaller font size for mobile devices */
+@media (max-width: 768px) {
+    .close-tooltip {
+        font-size: 16px;
+        /* Adjust the size for mobile */
+    }
+}
